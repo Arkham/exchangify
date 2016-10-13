@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/Arkham/exchange_rate.git
-  revision: 7ab42589980290b0e255d3f655d6815c64ec6fd9
+  remote: https://github.com/Arkham/exchange_rate.git
+  revision: 4f932eaec8be4ae8c4d84f600fc93d92998f8555
   specs:
     exchange_rate (0.1.0)
       ox (~> 2.4)

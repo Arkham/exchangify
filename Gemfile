@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'exchange_rate', github: 'Arkham/exchange_rate'
+gem 'exchange_rate', git: 'https://github.com/Arkham/exchange_rate.git'
 gem 'haml'
 gem 'materialize-sass'
 

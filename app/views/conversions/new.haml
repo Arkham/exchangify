@@ -11,11 +11,11 @@
 
   %div.spaced
     = f.label :from_currency, "From"
-    = f.select :from_currency, [["EUR", "EUR"], ["USD", "USD"], ["GBP", "GBP"]], {}, class: "browser-default"
+    = f.select :from_currency, options_for_currencies, {}, class: "browser-default"
 
   %div.spaced
     = f.label :to_currency, "To"
-    = f.select :to_currency, [["EUR", "EUR"], ["USD", "USD"], ["GBP", "GBP"]], {}, class: "browser-default"
+    = f.select :to_currency, options_for_currencies, {}, class: "browser-default"
 
   %div
     = f.submit "Convert", class: "waves-effect waves-light btn"
