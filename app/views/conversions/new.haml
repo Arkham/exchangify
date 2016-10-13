@@ -1,0 +1,21 @@
+%h2 Convert your money
+
+= form_for @conversion do |f|
+  %div
+    = f.label :date
+    = f.date_field :date, value: Time.now.strftime('%Y-%m-%d')
+
+  %div
+    = f.label :amount
+    = f.text_field :amount, type: :number, placeholder: "100.0"
+
+  %div.spaced
+    = f.label :from_currency, "From"
+    = f.select :from_currency, [["EUR", "EUR"], ["USD", "USD"], ["GBP", "GBP"]], {}, class: "browser-default"
+
+  %div.spaced
+    = f.label :to_currency, "To"
+    = f.select :to_currency, [["EUR", "EUR"], ["USD", "USD"], ["GBP", "GBP"]], {}, class: "browser-default"
+
+  %div
+    = f.submit "Convert", class: "waves-effect waves-light btn"
